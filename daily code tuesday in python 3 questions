@@ -1,0 +1,48 @@
+#kenny
+#solo
+#1/28/25
+#1) Identify the Smallest of Three Numbers: Develop a function find_smallest(x, y, z) that returns the smallest number among the three given integers x, y, and z. Use if statements to compare the numbers and determine the smallest one.
+#9 minutes
+
+def find_smallest(x, y, z):#3 parameters
+    if x < y and x < z: #x is less than y and z
+        return x
+    elif y < x and y < z: #y is less than x and z
+        return y
+    else:
+        return z #z is less than y and x
+    
+print(find_smallest(8, 14, 5)) #(x, y, z))
+
+#--------------------------------------------------------------------------------------------------------------------
+
+
+#kenny
+#solo
+#1/28/25
+#2) Write a function custom_sheep_call(vowel, count) that prints the word "b" followed by a specified character repeated a certain number of times, allowing for a customized sheep call.
+#6 minutes
+def custom_sheep_call(vowel, count):#2 parameters
+    print("b" + vowel * count)# added B in the print statement because sheeps makes a sound that starts with a B.
+    
+custom_sheep_call('a', 7)  #baaaaaaa
+custom_sheep_call('o', 7)  #booooooo
+custom_sheep_call('e', 7)  #beeeeeee
+
+#--------------------------------------------------------------------------------------------------------------------
+
+#kenny
+#solo
+#1/28/25
+#3) Develop a function sum_even_numbers(max_num) that returns the sum of all even numbers from 1 up to max_num (inclusive). Use a loop to iterate through the numbers and a conditional to check if each number is even.
+#12 minutes
+
+def sum_even_numbers(max_num):
+    max_num = 0
+    for num in range(1, max_num + 3): #starts at 1 and adds
+        if num % 2 == 0: 
+           max_num += num 
+    return max_num
+
+print(sum_even_numbers(16))
+#it works  when running the code but, i have a feeling that it may be wrong, if its right then i would like to review more for the final question
